@@ -1,5 +1,5 @@
 /* Write a C program that calculates the factorial of a number using a function
-Include function declaration, definition, and call.
+Include function declaration, definition, and call.*/
 
 #include <stdio.h>
 
@@ -59,7 +59,7 @@ int main()
 	}	
     return 0;
 }
-*/
+
 
 //WAP to reverse a string and check that the string is palindrome or no
 
