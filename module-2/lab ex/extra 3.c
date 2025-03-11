@@ -1,17 +1,61 @@
 /*LAB EXERCISE 1: Prime Number Check:-
 
-• Write a C program that checks whether a given number is a prime number or not using a for
+â€¢ Write a C program that checks whether a given number is a prime number or not using a for
 loop.
-• Challenge: Modify the program to print all prime numbers between 1 and a given number.*/
+â€¢ Challenge: Modify the program to print all prime numbers between 1 and a given number.*/
+
+#include <stdio.h>
+
+int main() {
+    int n, i, j, isPrime;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    // Check if the number is prime
+    if (n < 2) {
+        printf("%d is not a prime number.\n", n);
+    } else {
+        isPrime = 1;
+        for (i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        if (isPrime)
+            printf("%d is a prime number.\n", n);
+        else
+            printf("%d is not a prime number.\n", n);
+    }
+
+    // Print all prime numbers up to n
+    printf("Prime numbers between 1 and %d are: ", n);
+    for (i = 1; i <= n; i++) {
+        if (i < 2) continue;
+        isPrime = 1;
+        for (j = 2; j * j <= i; j++) {
+            if (i % j == 0) {
+                isPrime = 0;
+                break;
+            }
+        }
+        if (isPrime) {
+            printf("%d ", i);
+        }
+    }
+    printf("\n");
+
+    return 0;
+}
 
 
 
 /*
 LAB EXERCISE 2: Multiplication Table:-
 
-• Write a C program that takes an integer input from the user and prints its multiplication
+â€¢ Write a C program that takes an integer input from the user and prints its multiplication
 table using a for loop.
-• Challenge: Allow the user to input the range of the multiplication table (e.g., from 1 to N).
+â€¢ Challenge: Allow the user to input the range of the multiplication table (e.g., from 1 to N).
 */
 #include <stdio.h>
 int main() 
@@ -40,9 +84,9 @@ int main()
 /*
 LAB EXERCISE 3: Sum of Digits:-
 
-• Write a C program that takes an integer from the user and calculates the sum of its digits
+â€¢ Write a C program that takes an integer from the user and calculates the sum of its digits
 using a while loop.
-• Challenge: Extend the program to reverse the digits of the number.\
+â€¢ Challenge: Extend the program to reverse the digits of the number.\
 */
 
 #include <stdio.h>
@@ -231,7 +275,7 @@ printf("\nEnter the row count = ");
 }
 
 
-//• Write a program to find out the max from given number (E.g., No: -1562 Max number is 6).
+//â€¢ Write a program to find out the max from given number (E.g., No: -1562 Max number is 6).
 
 
 #include <stdio.h>
