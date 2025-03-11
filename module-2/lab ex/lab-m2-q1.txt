@@ -1,0 +1,15 @@
+Q-o Research and provide three real-world applications where C programming is
+extensively used, such as in embedded systems, operating systems, or game
+development.
+
+ans=
+
+1.Embedded Systems – C is used in microcontrollers, IoT devices, and automotive systems for performance and efficiency.
+2.Operating Systems – Major OS like Windows, Linux, and macOS have core components written in C.
+3.Game Development – C is used in game engines like Unity (for low-level systems) and Unreal Engine for performance optimization.
+
+
+
+
+
+
