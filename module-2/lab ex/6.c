@@ -1,7 +1,7 @@
 /*Write a C program to print numbers from 1 to 10 using all three types of loops
 (while, for, do-while).*/
 
-/*#include<stdio.h>
+#include<stdio.h>
 int main ()
 {
     int i;
@@ -37,7 +37,7 @@ int main ()
 
 /*WAP to take 10 no. Input from user find out below values a. How many Even
 numbers are there b. How many odd numbers are there c. Sum of even
-numbers d. Sum of odd numbers?
+numbers d. Sum of odd numbers?*/
 
 
 #include<stdio.h>
@@ -73,7 +73,7 @@ int main ()
 	
 	return 0;
 	 
-}*/
+}
 
 /*WAP to print number in reverse order e.g.: number = 64728 ---> reverse =
 82746  */
