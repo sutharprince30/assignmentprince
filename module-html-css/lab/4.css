@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');    
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-family: "Montserrat", serif;
+    text-decoration: none;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+}
+#logo
+{
+    height: 150px;
+}
+#logo:hover
+{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+}
+.navbar
+{
+    margin-top: 60px;
+    font-size: 20px;
+}
+#active
+{
+    color:green;
+    border-bottom: 2px solid green;
+}
+.navbar a
+{
+    margin-right: 1.5rem;
+    border-bottom: 2px solid transparent;
+}
+.navbar a:hover
+{
+    transition: 0.5s ease;
+    color:Green;
+    border-bottom: 2px solid green;
+}
+.title
+{
+    margin-left: 6rem;
+}
+.title h1
+{
+    font-size: 40px;
+    font-weight: 800;
+}
+.title h3
+{
+    margin-top: 20px;
+    font-size: 25px;
+
+}
+.title h3 span
+{
+    color: green;
+}
+.description
+{
+    margin-left: 6rem;
+    width: 475px;
+    margin-top: 2rem;
+    font-weight: 600;
+}
+.btn
+{
+    margin-left: 6rem;
+    margin-top: 2rem;
+    width: 220px;
+    text-align: center;
+}
+.btn:hover
+{
+    transition: 0.5s ease;
+    text-shadow: 0px 0px 10px green;
+    color: green;
+    border: 2px solid green;
+    border-radius: 20px;
+    width: 240px;
+    height: 50px;
+}
+.btn a
+{
+    font-size: 30px;
+    font-weight: 600;
+}
+.btn i
+{
+    font-size: 28px;
+    margin-right: 1rem;
+}
+.photo
+{
+    margin-left: 45rem;
+    margin-top: -29rem;
+}
+.photo img
+{
+    height: 600px;
+    background: none;
+    filter: drop-shadow(0px 0px 5px none);
+}
+.photo img:hover
+{
+    filter: drop-shadow(0px 0px 8px green);
+    transition: 0.5s ease;
+}
+.offer
+{
+    position: absolute;
+    z-index: 1;
+    top: 10rem;
+    margin: 0rem 5.5rem;
+}
+.offer marquee
+{
+    color: black;
+    background-color: bisque;
+}
+.card
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 4rem;
+    margin: 2rem 5rem;
+}
+.card div img
+{
+    height: 250px;
+    background: none;
+}
+.card div img:hover
+{
+    transition: 0.5s ease;
+    filter: drop-shadow(0px 0px 10px green);
+}
+.card div
+{
+    text-align: center;
+    border: 2px solid green;
+    border-radius: 40px;
+    box-shadow: 0px 0px 10px green;
+}
+.card div:hover
+{
+    transition: 0.5s ease;
+    border: 2px solid rgb(0, 195, 255);
+    box-shadow: 0px 0px 10px rgb(0, 195, 255);
+}
+.card div p
+{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+}
+.card div button
+{
+    border: 2px solid green;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 0.5rem;
+    margin-top: 1.6rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 2px green;
+}
+.card div button:hover
+{
+    transition: 0.5s ease;
+    transform: scale(1.1);
+
+}
+.new-main-card
+{
+    display: flex;
+    border: 2px solid green;
+    margin: 3rem 5rem;
+    box-shadow: 5px 5px 3px green;
+}
+.new-main-card img
+{
+    height: 400px;
+    background: none;
+    margin: 5rem 3rem;
+}
+.new-main-card .content-part
+{
+    margin-top: 7rem;
+}
+.new-main-card .content-part h1
+{
+    font-size: 40px;
+    margin-left: 55px;
+}
+.new-main-card .content-part p
+{
+    font-size: 20px;
+    width: 600px;
+    margin-top: 2rem;
+    padding:20px;
+    text-align: center;
+}
+.card-footer
+{
+    display: flex;
+}
+.card-footer h1
+{
+    font-weight: 700;
+    color: green;
+    margin-top: 2rem;
+}
+.card-footer button
+{
+    font-size: 25px;
+    border: 2px solid green;
+    font-weight: 700;
+    height: 50px;
+    width: 200px;
+    margin-top: 2rem;
+    margin-left: 19rem;
+    box-shadow: 3px 3px 3px green;
+}
+.about-content
+{
+    margin: 0rem 5rem;
+}
+.about-content h1
+{
+    font-size: 35px;
+    border-bottom: 2px solid green;
+}
+.about-content h3
+{
+    margin-top: 2.5rem;
+}
+.about-content p
+{
+    margin: 1rem 0rem;
+    line-height: 1.8;
+}
+.about-sub-content
+{
+    border-bottom: 2px solid green;
+    margin-top: 5rem;
+}
+.main-contact
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 0rem 5rem 5rem 5rem;
+}
+.user-info 
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-right: 2rem;
+}
+.user-info table td
+{
+    padding: 1rem;
+}
+.user-info table td input
+{
+    padding: 0.5rem;
+    border: 2px solid green;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px green;
+}
+.user-info table input:focus
+{
+    border-color: 2px solid green;
+}
+.sub
+{
+    text-align: center;
+    padding-top: 1rem;
+}
+.sub button
+{
+    font-size: 20px;
+    font-weight: 700;
+    border: 2px solid green;
+    padding: 0.5rem 1rem;
+    box-shadow: 3px 3px 3px green;
+}
+@media (max-width:430px)
+{
+    header
+    {
+        display: block;
+        margin: 0rem;
+        text-align: center;
+        width: 320px;
+    }
+    .navbar
+    {
+        text-align: center;
+        margin-top: -2rem;
+        margin-left: 1.2rem;
+        font-size: 15px;
+    }
+    .title
+    {
+        margin-left: 0rem;
+        margin-top: 20rem;
+        text-align: center;
+        width: 320px;
+    }
+    .title h1
+    {
+        font-size: 20px;
+    }
+    .title h3
+    {
+        margin-top: 5px;
+        font-size: 15px;
+    }
+    .description
+    {
+        text-align: center;
+        margin-left: 0rem;
+        width: 315px;
+        margin-top: 2rem;
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .btn
+    {
+        margin-left: 2.5rem;
+        margin-top: 2.5rem;
+    }
+    .photo
+    {
+        position: absolute;
+        z-index: 1;
+        margin: 0rem;
+        left: 0.6rem;
+        top: 1rem;
+    }
+    .photo img
+    {
+        height: 300px;
+    }
+    .offer
+    {
+        position: absolute;
+        z-index: 2;
+        top: 12rem;
+        margin: 0rem 1.1rem;
+        width: 280px;
+    }
+    .offer marquee
+    {
+        color: black;
+        background-color: bisque;
+    }
+    .card
+    {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 4rem;
+        margin: 2rem 5rem;
+    }
+    .card div img
+    {
+        height: 250px;
+        background: none;
+    }
+    .card div img:hover
+    {
+        transition: 0.5s ease;
+        filter: drop-shadow(0px 0px 10px green);
+    }
+    .card div
+    {
+        text-align: center;
+        border: 2px solid green;
+        border-radius: 40px;
+        box-shadow: 0px 0px 10px green;
+    }
+    .card div:hover
+    {
+        transition: 0.5s ease;
+        border: 2px solid rgb(0, 195, 255);
+        box-shadow: 0px 0px 10px rgb(0, 195, 255);
+    }
+    .card div p
+    {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    .card div button
+    {
+        border: 2px solid green;
+        font-size: 20px;
+        font-weight: 700;
+        padding: 0.5rem;
+        margin-top: 1.6rem;
+        margin-bottom: 2rem;
+        box-shadow: 3px 3px 2px green;
+    }
+    .card div button:hover
+    {
+        transition: 0.5s ease;
+        transform: scale(1.1);
+    
+    }
+    .new-main-card
+    {
+        display: flex;
+        border: 2px solid green;
+        margin: 3rem 5rem;
+        box-shadow: 5px 5px 3px green;
+    }
+    .new-main-card img
+    {
+        height: 400px;
+        background: none;
+    }
+    .new-main-card .content-part
+    {
+        margin-top: 7rem;
+    }
+    .new-main-card .content-part h1
+    {
+        font-size: 40px;
+    }
+    .new-main-card .content-part p
+    {
+        font-size: 20px;
+        width: 600px;
+        margin-top: 2rem;
+    }
+    .card-footer
+    {
+        display: flex;
+    }
+    .card-footer h1
+    {
+        font-weight: 700;
+        color: green;
+        margin-top: 2rem;
+    }
+    .card-footer button
+    {
+        font-size: 25px;
+        border: 2px solid green;
+        font-weight: 700;
+        height: 50px;
+        width: 200px;
+        margin-top: 2rem;
+        margin-left: 19rem;
+        box-shadow: 3px 3px 3px green;
+    }
+    .about-content
+    {
+        margin: 0rem 5rem;
+    }
+    .about-content h1
+    {
+        font-size: 35px;
+        border-bottom: 2px solid green;
+    }
+    .about-content h3
+    {
+        margin-top: 2.5rem;
+    }
+    .about-content p
+    {
+        margin: 1rem 0rem;
+        line-height: 1.8;
+    }
+    .about-sub-content
+    {
+        border-bottom: 2px solid green;
+        margin-top: 5rem;
+    }
+    .main-contact
+    {
+        display: flex;
+        justify-content: space-between;
+        margin: 0rem 5rem 5rem 5rem;
+    }
+    .user-info 
+    {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 3rem;
+        margin-right: 2rem;
+    }
+    .user-info table td
+    {
+        padding: 1rem;
+    }
+    .user-info table td input
+    {
+        padding: 0.5rem;
+        border: 2px solid green;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px green;
+    }
+    input:focus
+    {
+        background-color: beige;
+        color: black;
+    }
+    .sub
+    {
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .sub button
+    {
+        font-size: 20px;
+        font-weight: 700;
+        border: 2px solid green;
+        padding: 0.5rem 1rem;
+        box-shadow: 3px 3px 3px green;
+    }   
+}
